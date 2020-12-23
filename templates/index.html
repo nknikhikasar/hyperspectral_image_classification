@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hyperspectral-Image-classification</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+  <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-block{
+            background: cyan;
+            height: 100vh;
+            display: flex;
+        }
+
+        .left-side
+        {
+            width: 20%;
+            background: purple;
+            height: 100vh;
+        }
+
+        .right-side{
+            width: 81% ;
+            background: yellow;
+            height: 100vh;
+        }
+
+        .upper{
+            height: 50%;
+            background: red;
+
+        }
+
+        .lower
+        {
+
+        }
+
+        .lower-left{
+            height: 50vh;
+            width: 50%;
+            background: black;
+            }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main-block">
+        <div class="left-side">
+          <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="static/img/img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Hyperspectral-Image-classification</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/mayur-khalkar-b14b6a12b" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+
+
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about"><i class="bx bx-user"></i> <span>About Project</span></a></li>
+          <li><a href="#skills"><i class="bx bx-server"></i> Project Team</a></li>
+
+          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact Us</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+
+        </div>
+
+        <div class="right-side">
+            <div class="upper">
+              <h2>Column 1</h2>
+    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+
+      <p><label for="file" style="cursor: pointer;"><a class ="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Upload Image</a>></label></p>
+
+        <p><img id="output" width="300" /></p>
+    <script>
+          var loadFile = function(event)
+          {
+	        var image = document.getElementById('output');
+        	image.src = URL.createObjectURL(event.target.files[0]);
+          };
+        </script>
+
+            </div>
+
+
+            <div class="lower">
+                <div class="lower-left">
+                  <p>RESULT</p>
+
+                </div>
+                <div class="lower-right">
+                  <p>GRAPH</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</head>
+</html>
